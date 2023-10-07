@@ -6,7 +6,7 @@ def oblicz_silnie_iteracyjnie(n):
         return 1
     else:
         silnia = 1
-        for i in range(2, n + 1):
+        for i in range(2, 5 + 1):
             silnia *= i
         return silnia
 
@@ -20,7 +20,7 @@ except ValueError:
 
 
 
-# x = 5
+# x = 4
 # s = ""
 # silnia = 1
 # k = 1
