@@ -1,0 +1,53 @@
+
+1. **Pętla Zewnętrzna (j):**
+   ```python
+   for j in range(n - 1, -1, -1):
+   ```
+   Ta pętla zaczyna się od ostatniego indeksu listy (`n - 1`) i kończy na indeksie 0 (`-1`), iterując wstecz przez listę.
+
+2. **Przypisanie Wartości:**
+   ```python
+   x = lista[j]
+   p = j
+   k = n
+   licznik_p = 0
+   licznik_k = 0
+   ```
+   Zmienne `x`, `p` i `k` są inicjalizowane jako wartość elementu na indeksie `j` (czyli aktualnie sortowanego elementu), a `p` i `k` są używane jako wskaźniki graniczne wewnątrz pętli.
+
+3. **Wyszukiwanie Binarnie:**
+   ```python
+   while k - p > 1:
+       i = (p + k) // 2
+       if x <= lista[i]:
+           k = i
+           licznik_k += 1
+       else:
+           p = i
+           licznik_p += 1
+   ```
+   Ta część kodu to optymalizacja algorytmu sortowania przez wstawianie za pomocą wyszukiwania binarnego. Wyszukiwanie binarne jest używane do znalezienia odpowiedniej pozycji dla elementu `x` w posortowanej części listy.
+
+4. **Przesuwanie Elementów:**
+   ```python
+   for i in range(j, k - 1, -1):
+       lista[i + 1] = lista[i]
+   ```
+   Tutaj elementy w liście są przesuwane w prawo, aby zrobić miejsce dla elementu `x` na właściwej pozycji.
+
+5. **Wstawianie Elementu:**
+   ```python
+   lista[p] = x
+   ```
+   Element `x` jest wstawiany na odpowiednie miejsce w liście, które zostało znalezione za pomocą wyszukiwania binarnego.
+
+6. **Wyświetlanie Liczników:**
+   ```python
+   print(licznik_k, licznik_p)
+   ```
+   Liczniki `licznik_k` i `licznik_p` są wydrukowane, co może pomóc w zrozumieniu, ile operacji porównania zostało wykonanych w trakcie wyszukiwania binarnego.
+
+7. **Wyjście z Pętli i Wyświetlenie Posortowanej Listy:**
+   Po każdej iteracji pętli zewnętrznej, element na indeksie `j` jest już na właściwym miejscu w posortowanej części listy. Po zakończeniu pętli zewnętrznej, cała lista jest posortowana, więc jest wyświetlana na końcu kodu.
+
+Ten algorytm łączy sortowanie przez wstawianie z optymalizacją wyszukiwania binarnego, co pozwala na efektywne sortowanie listy.
