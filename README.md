@@ -2,14 +2,14 @@
 
 ## Definiowanie zmiennych w Pythonie
 
-Text Type:	str
-Numeric Types:	int, float, complex
-Sequence Types:	list, tuple, range
-Mapping Type:	dict
-Set Types:	set, frozenset
-Boolean Type:	bool
-Binary Types:	bytes, bytearray, memoryview
-None Type:	NoneType
+* Text Type:	str
+* Numeric Types:	int, float, complex
+* Sequence Types:	list, tuple, range
+* Mapping Type:	dict
+* Set Types:	set, frozenset
+* Boolean Type:	bool
+* Binary Types:	bytes, bytearray, memoryview
+* None Type:	NoneType
 
 Python nie ma polecenia do deklarowania zmiennej.
 Zmienna jest tworzona w momencie, gdy po raz pierwszy przypiszesz do niej wartość.
