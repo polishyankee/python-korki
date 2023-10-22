@@ -8,6 +8,7 @@ def konwertuj_na_szesnastkowy(n):
     return wynik
 
 # Testowanie funkcji
-n = 67
+n = 1679
 szesnastkowy = konwertuj_na_szesnastkowy(n)
 print(f"{n} w systemie szesnastkowym to {szesnastkowy}")
+

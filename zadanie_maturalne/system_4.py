@@ -7,6 +7,6 @@ def konwertuj_na_czworowy(n):
     return wynik
 
 # Testowanie funkcji
-n = 67
+n = 80
 czworowy = konwertuj_na_czworowy(n)
 print(f"{n} w systemie czwórkowym to {czworowy}")

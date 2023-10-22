@@ -1,7 +1,7 @@
 # def liczba_blokow(n):
 #     liczba_blokow = 0
 #     while n > 0:
-#         if n % 2 == 1:
+#         if n % 2:
 #             liczba_blokow += 1
 #         n = n // 2
 #     return liczba_blokow
@@ -49,7 +49,7 @@
 # print(f"Dla liczby {liczba1} wynikiem jest {wynik1}, ponieważ {liczba1} w zapisie binarnym to {bin(liczba1)[2:]}")
 # print(f"Dla liczby {liczba2} wynikiem jest {wynik2}, ponieważ {liczba2} w zapisie binarnym to {bin(liczba2)[2:]}")
 
-def bloki(liczba):
+def bloczek(liczba):
     if liczba == 0:
         return 1
     
@@ -66,7 +66,6 @@ def bloki(liczba):
     return ile_blokow
 
 # Testy
-print(bloki(67))  # Wynik: 3
-print(bloki(245)) # Wynik: 5
-
+print(bloczek(67))  # Wynik: 3
+print(bloczek(245)) # Wynik: 5
 

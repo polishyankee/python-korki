@@ -7,6 +7,6 @@ def konwertuj_na_osemkowy(n):
     return wynik
 
 # Testowanie funkcji
-n = 67
+n = 1679
 osemkowy = konwertuj_na_osemkowy(n)
 print(f"{n} w systemie ósemkowym to {osemkowy}")
