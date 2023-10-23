@@ -30,3 +30,7 @@ def znajdz_maksimum_i_minimum(nazwa_pliku):
 maksimum, minimum = znajdz_maksimum_i_minimum('bin.txt')
 print(f'Maksimum: {maksimum}')
 print(f'Minimum: {minimum}')
+
+with open('wyniki2.txt', 'w') as plik_wynikowy:
+    plik_wynikowy.write(f'Maksimum: {maksimum}\n')
+    plik_wynikowy.write(f'Minimum: {minimum}\n')
