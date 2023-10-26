@@ -23,7 +23,7 @@ def oblicz_bloki_dla_liczb_z_pliku(nazwa_pliku_wejsciowego, nazwa_pliku_wyjsciow
             liczba = int(wiersz.strip())
             liczba_binarna = dziesietna_na_binarny(liczba)
             bloki = licz_bloki(liczba_binarna)
-            plik_wyjsciowy.write(f'Liczba: {liczba}, Binarnie: {liczba_binarna}, Bloki: {bloki}\n')
+            plik_wyjsciowy.write(f' Bloki: {bloki}\n')
             print(f'Liczba: {liczba}, Binarnie: {liczba_binarna}, Bloki: {bloki}')
 
 # Przykład użycia
