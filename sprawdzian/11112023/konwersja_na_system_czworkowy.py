@@ -29,7 +29,6 @@ def wczytaj_liczby_z_pliku(file_path):
             liczby.append(czworowy)
 
     return liczby
-
 # Tutaj podaj ścieżkę do swojego pliku z liczbami
 file_path = 'zadanie_maturalne/liczby.txt'
 
@@ -37,3 +36,25 @@ file_path = 'zadanie_maturalne/liczby.txt'
 liczby_w_czworowym = wczytaj_liczby_z_pliku(file_path)
 print(liczby_w_czworowym)
 
+def konwertuj_na_czworkowy(n):
+    listap = []
+    for i in n:
+        i = int(i)
+        wynik = ''
+        while i > 0:
+            reszta = i % 4
+            wynik = str(reszta) + wynik
+            i //= 4
+        listap.append(wynik)
+    return listap
+
+# Wczytywanie liczb z pliku
+lista = []
+with open('zadanie_maturalne/liczby.txt') as file:
+    lines = file.readlines()
+    for line in lines:
+        lista.append(line.strip())
+
+# Konwersja liczb na system czwórkowy
+system_czworkowy = konwertuj_na_czworkowy(lista)
+print(system_czworkowy)

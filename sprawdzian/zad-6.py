@@ -58,3 +58,5 @@ def dziesiatkowy_na_trojkowy(liczba):
 liczby = wczytaj_liczby('liczby4.txt')
 liczby_trojkowe = [dziesiatkowy_na_trojkowy(liczba) for liczba in liczby]
 print(liczby_trojkowe)
+
+src="{{ asset('storage/'.$category->main_image) }}"

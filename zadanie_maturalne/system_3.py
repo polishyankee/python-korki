@@ -10,3 +10,5 @@ def konwertuj_na_trojkowy(n):
 n = 67
 trojkowy = konwertuj_na_trojkowy(n)
 print(f"{n} w systemie trójkowym to {trojkowy}")
+
+
