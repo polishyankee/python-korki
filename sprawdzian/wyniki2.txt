@@ -1,2 +1,0 @@
-Maksimum: 10101111010
-Minimum: 1010

@@ -1,8 +1,0 @@
-while liczba_dziesietna > 0:: To jest pętla while, która będzie trwać dopóki liczba_dziesietna jest większa od zera. Pętla ta wykonuje się, dopóki pozostała część dziesiętna liczby, którą konwertujemy, nie jest równa zero.
-reszta = liczba_dziesietna % podstawa_wyjsciowa: Tutaj używamy operatora % do obliczenia reszty z dzielenia liczba_dziesietna przez podstawa_wyjsciowa. Ta reszta będzie kolejną cyfrą w liczbie wynikowej.
-if reszta < 10:: To jest warunek sprawdzający, czy obliczona reszta jest mniejsza od 10. Jeśli tak, to mamy do czynienia z cyfrą od 0 do 9.
-liczba_wyjsciowa = str(reszta) + liczba_wyjsciowa: Jeśli reszta jest mniejsza od 10, zamieniamy ją na string (za pomocą str()) i dodajemy do początku liczba_wyjsciowa. Działa to na zasadzie dodawania cyfry na początku wynikowej liczby.
-else:: Jeśli reszta jest większa lub równa 10, oznacza to, że mamy do czynienia z cyfrą od 10 do 15 w systemie szesnastkowym.
-liczba_wyjsciowa = chr(ord('A') + reszta - 10) + liczba_wyjsciowa: Tutaj używamy chr() i ord() do przekształcenia liczby reszty (10 do 15) na odpowiadające im litery od 'A' do 'F' w systemie szesnastkowym. Następnie dodajemy tę literę na początek liczba_wyjsciowa.
-liczba_dziesietna //= podstawa_wyjsciowa: Po obliczeniu reszty, dzielimy liczba_dziesietna przez podstawa_wyjsciowa, aby kontynuować proces konwersji dla reszty liczby.
-Ten fragment kodu jest kluczowy dla konwersji liczby z systemu dziesiętnego na inny system liczbowy. Działa to na zasadzie ciągłego dzielenia liczby dziesiętnej przez podstawę systemu docelowego i zapisywania reszt jako cyfry w odpowiedniej kolejności, zaczynając od ostatniej reszty (najmniej znaczącej cyfry) i przechodząc do pierwszej reszty (najbardziej znaczącej cyfry) w wynikowej liczbie.
