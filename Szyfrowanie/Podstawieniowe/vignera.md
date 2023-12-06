@@ -1,0 +1,2 @@
+Szyfr Vigenère’a używa słowa kluczowego do określenia przesunięcia dla każdej litery w tekście. Dla każdej litery tekstu, używana jest litera klucza do określenia przesunięcia, podobnie jak w szyfrze Cezara. Klucz jest powtarzany, aby pasował do długości tekstu. Szyfr ten jest trudniejszy do złamania niż szyfr Cezara, ponieważ każda litera tekstu może być przesunięta w różny sposób, w zależności od odpowiadającej jej litery klucza.
+
