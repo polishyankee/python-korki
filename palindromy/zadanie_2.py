@@ -1,6 +1,6 @@
-def is_palindrome(word):
-    """Sprawdza, czy słowo jest palindromem."""
-    return word == word[::-1]
+# def is_palindrome(word):
+#     """Sprawdza, czy słowo jest palindromem."""
+#     return word == word[::-1]
 
 def count_palindrome_families(file_path):
     """Liczy rodzin palindromów."""
@@ -8,7 +8,7 @@ def count_palindrome_families(file_path):
     with open(file_path, 'r') as file:
         for word in file:
             word = word.strip()
-            if is_palindrome(word):
+            if word == word[::-1]:
                 families.add(len(word))
     return len(families)
 
@@ -17,5 +17,6 @@ file_path = 'slowa.txt'
 
 # Liczenie rodzin palindromów i zapis wyników
 family_count = count_palindrome_families(file_path)
+print(family_count)
 with open('wyniki2.txt', 'w') as file:
     file.write(f"Zadanie 2\n{family_count}\n")
